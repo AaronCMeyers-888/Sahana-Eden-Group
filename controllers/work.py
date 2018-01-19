@@ -29,6 +29,7 @@ def job_type():
     return s3_rest_controller()
 
 # -----------------------------------------------------------------------------
+##### Specifies the job for each controller
 def job():
     """ Jobs - RESTful controller """
 
