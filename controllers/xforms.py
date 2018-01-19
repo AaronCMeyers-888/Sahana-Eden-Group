@@ -7,6 +7,7 @@
 module = request.controller
 
 # -----------------------------------------------------------------------------
+##### This will allow the controller to download the forms/lists of their choosing
 def forms():
     """ Controller to download form list and individual forms """
 
@@ -54,6 +55,7 @@ def forms():
     return output
 
 # -----------------------------------------------------------------------------
+##### This will allow for the controller to add information to the site
 #def submission():
     #""" Controller to submit xforms instances """
 
@@ -61,6 +63,7 @@ def forms():
     #raise NotImplementedError
 
 # -----------------------------------------------------------------------------
+##### I think that this adds a new table?
 def create():
     """
         Given a Table, returns an XForms to create an instance:
@@ -120,6 +123,7 @@ def create():
                 controllers=controllers, itext_list=itext_list)
 
 # -----------------------------------------------------------------------------
+##### 
 def uses_requirement(requirement, field):
     """
         Check if a given database field uses the specified requirement
@@ -137,6 +141,7 @@ def uses_requirement(requirement, field):
     return False
 
 # -----------------------------------------------------------------------------
+##### 
 def generate_instance(table, fieldname):
     """
         Generates XML for the instance of the specified field.
@@ -152,6 +157,7 @@ def generate_instance(table, fieldname):
     return instance
 
 # -----------------------------------------------------------------------------
+##### Binds the information into the database field
 def generate_bindings(table, fieldname, ref):
     """
         Generates the XML for bindings for the specified database field.
@@ -221,6 +227,7 @@ def generate_bindings(table, fieldname, ref):
     return binding
 
 # -----------------------------------------------------------------------------
+##### 
 def generate_controllers(table, fieldname, ref):
     """
         Generates the controllers XML for the database table field.
