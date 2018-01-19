@@ -34,6 +34,7 @@ def config():
     return r()
 
 # -----------------------------------------------------------------------------
+##### Deals with syncing repositories together
 def repository():
     """ Repository Management Controller """
 
@@ -189,6 +190,7 @@ def repository():
     return s3_rest_controller("sync", "repository", rheader=rheader)
 
 # -----------------------------------------------------------------------------
+##### Deals with the actual synchronization process
 def sync():
     """ Synchronization """
 
