@@ -31,6 +31,7 @@ def create():
     redirect(URL(f="vehicle", args="create"))
 
 # -----------------------------------------------------------------------------
+##### Responsible for vechile table?
 def vehicle():
     """
         RESTful CRUD controller
@@ -123,6 +124,7 @@ def vehicle_type():
     return s3_rest_controller()
 
 # =============================================================================
+##### Establishes items and messages
 def item():
     """ RESTful CRUD controller """
 
@@ -170,6 +172,7 @@ def item():
     return s3db.supply_item_controller()
 
 # =============================================================================
+##### Filters (tables?) by item category
 def item_category():
     """ RESTful CRUD controller """
 
