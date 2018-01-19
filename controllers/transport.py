@@ -16,6 +16,7 @@ def index():
     return s3db.cms_index(module)
 
 # -----------------------------------------------------------------------------
+##### Responsible for display main transport menu?
 def airport():
     """ RESTful CRUD controller """
 
@@ -51,6 +52,7 @@ def border_crossing():
     return s3_rest_controller(rheader=s3db.transport_rheader)
 
 # -----------------------------------------------------------------------------
+##### Displays the border control points in the human resource section?
 def border_control_point():
     """ Border Control Points - RESTful CRUD controller """
 
