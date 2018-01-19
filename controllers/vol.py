@@ -99,6 +99,7 @@ def group():
     return s3db.hrm_group_controller()
 
 # -----------------------------------------------------------------------------
+##### Keeps track of who are members
 def group_membership():
     """
         Membership controller
@@ -351,6 +352,7 @@ def activity_type():
     return s3_rest_controller()
 
 # -----------------------------------------------------------------------------
+##### Keeps track of the different activities and when they occur. 
 def activity():
 
     def prep(r):
