@@ -43,6 +43,7 @@ def create():
                  vars={"viewing": "survey_series.%s" % request.args[0]}))
 
 # -----------------------------------------------------------------------------
+##### This is responsible for the insertion of records in a variety of different languages
 def template():
     """ RESTful CRUD controller """
 
@@ -232,6 +233,7 @@ def template_summary():
     return output
 
 # -----------------------------------------------------------------------------
+##### Responsible for creating and viewing series within a speific template
 def series():
     """ RESTful CRUD controller """
 
@@ -300,7 +302,7 @@ def series():
     output = s3_rest_controller(rheader=s3db.survey_series_rheader)
     return output
 
-# -----------------------------------------------------------------------------
+# ----------------------------------------------------------------------------- 
 def series_export_formatted():
     """
         Download a Spreadsheet which can be filled-in offline & uploaded
@@ -986,6 +988,7 @@ def new_assessment():
     return output
 
 # -----------------------------------------------------------------------------
+##### This function is responsible for allowing the user to download/use spreadsheets found in this section of the website.
 def complete():
     """ RESTful CRUD controller """
 
